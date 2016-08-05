@@ -11,6 +11,7 @@ object Main extends App {
    "SUNDAY" -> java.util.Calendar.SUNDAY
    )
   for(d <- daysOfTheWeek) println(d)
+
 }
 
 
