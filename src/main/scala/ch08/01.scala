@@ -1,4 +1,4 @@
-package Ch06 {
+package Ch08 {
   package Ex01 {
 
     class BankAccount(initialBalance: Double) {

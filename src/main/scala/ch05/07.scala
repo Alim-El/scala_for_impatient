@@ -8,7 +8,6 @@ package Ch05 {
         private val s = str.split(' ')(1)
 
         def name = n
-
         def surname = s
       }
 

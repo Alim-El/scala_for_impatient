@@ -5,7 +5,7 @@ package Ch04 {
   package Ex02 {
 
     object Main extends App {
-      var in = new java.util.Scanner(new java.io.File("C:\\11.txt"))
+      var in = new java.util.Scanner(new java.io.File("C:\\testFiles\\Ch04ex02.txt"))
       var words = new mutable.HashMap[String, Int]()
       while (in.hasNext()) {
         var k = in.next()

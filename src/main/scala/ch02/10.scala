@@ -6,9 +6,9 @@ package Ch02 {
 
     object Main extends App {
       def powX(x: Double, n: Int): Double = {
-        if (n % 2 == 0 && n > 0) pow(pow(x, n / 2), 2)
-        else if (n > 0 && n % 2 != 0) x * pow(x, n - 1)
-        else if (n < 0) 1 / pow(x, -n)
+        if (n % 2 == 0 && n > 0) powX(x, n / 2) * powX(x, n / 2)
+        else if (n > 0 && n % 2 != 0) x * powX(x, n - 1)
+        else if (n < 0) 1 / powX(x, -n)
         else 1
       }
 

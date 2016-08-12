@@ -9,7 +9,7 @@ package Ch04 {
   package Ex05 {
 
     object Main extends App {
-      var in = new java.util.Scanner(new java.io.File("C:\\11.txt"))
+      var in = new java.util.Scanner(new java.io.File("C:\\testFiles\\Ch04ex02.txt"))
       val treeWordsCounter = new TreeMap[String, Int]()
 
       while (in.hasNext()) {

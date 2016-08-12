@@ -1,6 +1,6 @@
 import scala.math.BigDecimal
 
-package Ch08 {
+package Ch06 {
   package Ex01 {
 
     object Conversions {

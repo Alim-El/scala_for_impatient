@@ -3,7 +3,7 @@ import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 package Ch04 {
-  package Ex03 {
+  package Ex04 {
 
     object Main extends App {
       var in = new java.util.Scanner(new java.io.File("C:\\testFiles\\Ch04ex02.txt"))
@@ -11,9 +11,9 @@ package Ch04 {
       var words = ArrayBuffer[String]()
       while (in.hasNext()) words += in.next()
 
-      var wordsCount = new scala.collection.immutable.HashMap[String, Int]
-
+      var wordsCount = new scala.collection.immutable.TreeMap[String, Int]
       for (word <- words.distinct) wordsCount = wordsCount + (word -> words.count(_ == word))
+
       for ((k, v) <- wordsCount) printf("Word %s contains %d times\n", k, v)
 
     }
@@ -21,4 +21,7 @@ package Ch04 {
   }
 
 }
+
+
+
 
