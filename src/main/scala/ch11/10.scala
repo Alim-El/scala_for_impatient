@@ -8,6 +8,7 @@ package Ch11 {
     }
 
     object Main extends App {
+      // переменной s присваивается некая последовательность
       val RichFile(s @ _*) = """C:\\logs\\proxy-2016-06-24.log"""
       println(s.toString)
     }
